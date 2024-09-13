@@ -1,0 +1,47 @@
+/* Full screen hero section with background slideshow */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background images */
+  }
+  
+  /* Content container */
+  .hero__content {
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button styling */
+  .hero__button {
+    background-color: #00b894;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero__button:hover {
+    background-color: #009688;
+  }
+  

@@ -1,0 +1,87 @@
+/* General styling for the about section */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+
+  }
+  .description{
+    font-size: 1.3rem;
+    font-weight:500;
+    margin-bottom: 20px;
+  }
+  /* Section title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  /* Grid layout for the project cards */
+  .project-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  /* Individual project card styling */
+  .project-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  
+  /* Image should cover the entire card */
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Overlay for text */
+  .project-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Text link styling */
+  .project-link {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #00b894;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .project-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  

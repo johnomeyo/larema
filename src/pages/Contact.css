@@ -1,0 +1,70 @@
+/* Section container */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+/* Flexbox layout for contact options */
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows items to wrap if they don't fit */
+}
+
+/* Individual contact option styling */
+.contact-option {
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 24%; /* Four items per row on laptop screens */
+    box-sizing: border-box;
+}
+
+/* Icon size and spacing */
+.contact-option i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Reset margins for paragraphs */
+.contact-option p {
+    margin: 0;
+}
+
+/* FAQ Section styling */
+.faq-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for highlighted text */
+.contact-means {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Adjust width of contact options for medium screens */
+    .contact-option {
+        width: 45%; /* Two items per row on medium screens */
+        margin-bottom: 20px; /* Add space between rows */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack contact options vertically on smaller screens */
+    .contact-options {
+        flex-direction: column;
+    }
+
+    .contact-option {
+        width: 100%; /* Full width for each contact option */
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+}
