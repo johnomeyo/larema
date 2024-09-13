@@ -1,0 +1,118 @@
+/* Make the section text center aligned with padding */
+.why-choose-us {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the section heading */
+.why-choose-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph within the section */
+.why-choose-us p {
+    margin-bottom: 20px;
+}
+
+/* Container for cards with responsive layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to next line */
+    justify-content: space-around;
+    gap: 20px;
+    /* Add gap between cards */
+}
+
+/* Style each card */
+.card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    /* Adjust card width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add shadow for better visibility */
+}
+
+/* Style the icon within each card */
+.card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Style the card heading */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style the icon avatar */
+.icon-avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: darkblue;
+    display: flex;
+    /* Use flexbox to center content */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    margin: auto;
+    /* Center avatar horizontally in its container */
+}
+.icon-avatar1 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    /* Use flexbox to center content */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    margin: auto;
+    /* Center avatar horizontally in its container */
+}
+.text{
+    max-width: 60vw;
+    margin: auto;
+    font-size: 1.2rem;
+}
+.choose-text{
+color: #1f8563;
+}
+.icon-avatar2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    /* Use flexbox to center content */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    margin: auto;
+    /* Center avatar horizontally in its container */
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        /* Stack cards vertically on smaller screens */
+        align-items: center;
+        /* Center cards horizontally */
+    }
+    .card {
+        width: 100%;
+        /* Make cards take full width on small screens */
+        max-width: 300px;
+        /* Optional: set max width for cards on small screens */
+    }
+}

@@ -11,7 +11,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allows items to wrap if they don't fit */
+    flex-wrap: wrap;
+    /* Allows items to wrap if they don't fit */
 }
 
 /* Individual contact option styling */
@@ -21,7 +22,8 @@
     padding: 10px;
     border: 1px solid grey;
     border-radius: 8px;
-    width: 24%; /* Four items per row on laptop screens */
+    width: 24%;
+    /* Four items per row on laptop screens */
     box-sizing: border-box;
 }
 
@@ -29,6 +31,7 @@
 .contact-option i {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #1f8563;
 }
 
 /* Reset margins for paragraphs */
@@ -50,21 +53,27 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
+
     /* Adjust width of contact options for medium screens */
     .contact-option {
-        width: 45%; /* Two items per row on medium screens */
-        margin-bottom: 20px; /* Add space between rows */
+        width: 45%;
+        /* Two items per row on medium screens */
+        margin-bottom: 20px;
+        /* Add space between rows */
     }
 }
 
 @media (max-width: 768px) {
+
     /* Stack contact options vertically on smaller screens */
     .contact-options {
         flex-direction: column;
     }
 
     .contact-option {
-        width: 100%; /* Full width for each contact option */
-        margin-bottom: 20px; /* Add space between stacked items */
+        width: 100%;
+        /* Full width for each contact option */
+        margin-bottom: 20px;
+        /* Add space between stacked items */
     }
 }
