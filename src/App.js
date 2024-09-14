@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import WhyChooseUsSection from "./pages/WhyChooseUs";
 import TourPackages from "./components/TourPackages";
 import Footer from "./components/Footer";
+import SliderComponent from "./components/SliderComponent";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <About />
       <WhyChooseUsSection />
       <TourPackages />
+      <SliderComponent/>
       <Testimonial />
       <Contact />
       <Footer/>

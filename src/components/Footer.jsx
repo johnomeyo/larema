@@ -27,9 +27,9 @@ function Footer() {
 
         <div className="footer-section contact-info">
           <h4>Contact Us</h4>
-          <p><strong>Email:</strong> info@trekxplore.com</p>
+          <p><strong>Email:</strong> info@larematrekk.com</p>
           <p><strong>Phone:</strong> +123 456 789</p>
-          <p><strong>Location:</strong> 123 Adventure Road, Mountain Town, Country</p>
+          <p><strong>Location:</strong> 123 Adventure Road, Mountain Town, Tanzania</p>
         </div>
 
         <div className="footer-section newsletter">
@@ -57,7 +57,7 @@ function Footer() {
             <i className="fab fa-youtube"></i>
           </a>
         </div>
-        <p>&copy; {new Date().getFullYear()} TrekXplore. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Larema Trekking And Explore. All Rights Reserved.</p>
       </div>
     </footer>
   );

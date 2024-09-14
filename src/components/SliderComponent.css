@@ -1,0 +1,165 @@
+/* SliderComponent.css */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-content {
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .slider-title {
+    font-size: 3rem;
+    font-weight: bold;
+    /* color: #fff; */
+    margin-bottom: 10px;
+  }
+  
+  .slider-description {
+    font-size: 1.2rem;
+    /* color: #fff; */
+    margin-bottom: 30px;
+  }
+  
+  .slide-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+  }
+  
+  .slide-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide-hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .slide-image-container:hover img {
+    transform: scale(1.05);
+  }
+  
+  .slide-image-container:hover .slide-hover-content {
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #00b894; /* Changed to #00b894 */
+    width: 12px;
+    height: 12px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #00b894; /* Changed to #00b894 */
+  }
+  
+  .swiper-button-prev, .swiper-button-next {
+    color: #00b894; /* Changed to #00b894 */
+    font-size: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .slider-title {
+      font-size: 2.5rem;
+    }
+  
+    .slider-description {
+      font-size: 1.1rem;
+    }
+  
+    .slide-image-container {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .slider-title {
+      font-size: 2rem;
+    }
+  
+    .slider-description {
+      font-size: 1rem;
+    }
+  
+    .slide-image-container {
+      height: 300px;
+    }
+  
+    .slider-content {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slider-title {
+      font-size: 1.8rem;
+    }
+  
+    .slider-description {
+      font-size: 0.9rem;
+    }
+  
+    .slide-image-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .slider-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .slider-description {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  
+    .slider-content {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .slide-image-container {
+      height: 200px;
+    }
+  }
+  
