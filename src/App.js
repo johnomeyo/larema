@@ -5,6 +5,7 @@ import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
 import WhyChooseUsSection from "./pages/WhyChooseUs";
 import TourPackages from "./components/TourPackages";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <TourPackages />
       <Testimonial />
       <Contact />
+      <Footer/>
     </>
 
   );
