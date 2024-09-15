@@ -1,40 +1,32 @@
-import { Link, NavLink } from "react-router-dom";
-import "./NavBar.css";
-import { useState } from "react";
+import React, { useState } from 'react';
+import './Navbar.css'; // Import the CSS file for styling
+import logo from '../larema.jpeg'
 
-export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div>
-      <nav className="nav">
-        <Link to="/" className="title">
-          Pretty
-        </Link>
-        <div
-          className="menu"
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul className={menuOpen ? "open" : ""}>
-          <li>
-            <NavLink to="blog">Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to="about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink to="search">Search</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="navbar">
+      <div className="logo">
+        <img src={logo} alt="Company Logo" />
+      </div>
+      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div className="hamburger" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   );
 };
+
+export default Navbar;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Add the CSS below
-import logo from "../green_tech_logo.jpg"; // Replace with the correct path to your logo
+import logo from "../larema.jpeg"; // Replace with the correct path to your logo
 
 function Footer() {
   return (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
+import Navbar from "../components/Navbar";
 
 export const Hero = () => {
     // List of images for the slideshow
@@ -25,16 +26,18 @@ export const Hero = () => {
     }, [images.length]);
 
     return (
-        <section
-            className="hero"
-            style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-        >
-            <div className="hero__content">
-                <h3 className="hero__title">Experience The Ultimate Safari Adventure by Larema Trekking and Adventure</h3>
-                <h2 className="hero__subtitle">TANZANIA</h2>
-                <button className="hero__button">Explore</button>
-            </div>
-        </section>
+        <>
+        <Navbar/>
+            <section
+                className="hero"
+                style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+            >
+                <div className="hero__content">
+                    <h3 className="hero__title">Experience The Ultimate Safari Adventure by Larema Trekking and Adventure</h3>
+                    <h2 className="hero__subtitle">TANZANIA</h2>
+                    <button className="hero__button">Explore</button>
+                </div>
+            </section></>
     );
 };
 

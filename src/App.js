@@ -10,14 +10,15 @@ import SliderComponent from "./components/SliderComponent";
 function App() {
   return (
     <>
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <WhyChooseUsSection />
       <TourPackages />
-      <SliderComponent/>
+      <SliderComponent />
       <Testimonial />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
 
   );
