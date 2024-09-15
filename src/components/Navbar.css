@@ -1,31 +1,33 @@
 /* Centered Navbar */
 .navbar {
   display: flex;
-  justify-content: center; /* Center everything inside the navbar */
-  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  align-items: center;     /* Align items vertically */
   padding: 20px;
-  background-color: transparent; /* Transparent background */
-  position: absolute; /* Position navbar over the hero section */
-  top: 0;
+  background-color: #0a3d62; /* Slightly dark background */
   width: 100%;
-  z-index: 10; /* Ensure it stays on top */
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+  position: relative; /* Ensure logo can be positioned absolutely */
 }
 
 /* Adjust the logo to be on the left */
 .logo {
   position: absolute;
-  left: 20px; /* Align the logo to the left */
+  left: 20px; /* Align logo to the left */
 }
 
 .logo img {
   width: 100px;
 }
 
+/* Center the nav-links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
   justify-content: center; /* Center the navigation items */
+  flex-grow: 1; /* Allow the links to grow and take available space */
 }
 
 .nav-links li {
@@ -34,7 +36,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #fff; /* White text for visibility */
+  color: #fff; /* Text color */
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -61,15 +63,16 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
+    display: none; /* Initially hidden on mobile */
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight background color for the menu on mobile */
+    padding: 20px;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Slight background color for the menu on mobile */
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    display: none;
   }
 
   .nav-links.active {

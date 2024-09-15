@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
-import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
+import WhyChooseUs from './WhyChooseUs';
+import Testimonials from './Testimonial';
+
 
 export const Hero = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        // Navigate to the target page
+        navigate("/destinations");
+    };
     // List of images for the slideshow
     const images = [
         "https://images.unsplash.com/photo-1650668302253-3fc13879ec85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -19,15 +29,15 @@ export const Hero = () => {
             setCurrentImageIndex((prevIndex) =>
                 prevIndex === images.length - 1 ? 0 : prevIndex + 1
             );
-        }, 5000); // 5000ms = 5 seconds
+        }, 5000);
 
         // Clear the interval on component unmount
         return () => clearInterval(interval);
     }, [images.length]);
 
     return (
+
         <>
-        <Navbar/>
             <section
                 className="hero"
                 style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
@@ -35,9 +45,14 @@ export const Hero = () => {
                 <div className="hero__content">
                     <h3 className="hero__title">Experience The Ultimate Safari Adventure by Larema Trekking and Adventure</h3>
                     <h2 className="hero__subtitle">TANZANIA</h2>
-                    <button className="hero__button">Explore</button>
+                    <button className="hero__button" onClick={handleClick}>Explore</button>
                 </div>
-            </section></>
+            </section>
+            <WhyChooseUs />
+            <Testimonials />
+
+        </>
+
     );
 };
 

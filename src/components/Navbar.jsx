@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css'; // Import the CSS file for styling
 import logo from '../larema.jpeg'
 
@@ -15,10 +16,10 @@ const Navbar = () => {
         <img src={logo} alt="Company Logo" />
       </div>
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><Link to="/">Home</Link></li> {/* Use Link with to="/" */}
+        <li><Link to="/about">About</Link></li> {/* Use Link with to="/about" */}
+        <li><Link to="/services">Services</Link></li> {/* Use Link with to="/services" */}
+        <li><Link to="/contact">Contact</Link></li> {/* Use Link with to="/contact" */}
       </ul>
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
