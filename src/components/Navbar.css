@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center; /* Center everything horizontally */
   align-items: center;     /* Align items vertically */
-  padding: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
   background-color: #0a3d62; /* Slightly dark background */
   width: 100%;
   z-index: 10;
@@ -18,7 +19,7 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
 }
 
 /* Center the nav-links */
