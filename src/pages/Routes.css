@@ -1,0 +1,128 @@
+.table-container {
+    margin: auto;
+    padding: 20px;
+    max-width: 80dvw;
+    overflow-x: auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.trip-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.sub-trip {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.trip-image {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.view-trip-link {
+    color: #00b894;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-trip-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    /* Hide the trip image on small screens */
+    .trip-image {
+        display: none;
+    }
+    .table-container{
+        width: 100vw;
+    }
+    /* Stack the trip title and sub-trip vertically */
+    .trip-details {
+        flex-direction: column;
+    }
+
+    .trip-title {
+        font-size: 1.2rem;
+    }
+
+    .sub-trip {
+        font-size: 1rem;
+        color: grey;
+        margin-top: 5px;
+    }
+
+    /* Adjust the price section font sizes for small screens */
+    .price-section {
+        margin-top: 10px;
+    }
+
+    .original-price {
+        font-size: 0.8rem;
+    }
+
+    .discounted-price {
+        font-size: 1.1rem;
+    }
+}

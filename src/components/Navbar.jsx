@@ -18,7 +18,7 @@ const Navbar = () => {
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/">Home</Link></li> {/* Use Link with to="/" */}
         <li><Link to="/about">About</Link></li> {/* Use Link with to="/about" */}
-        <li><Link to="/services">Services</Link></li> {/* Use Link with to="/services" */}
+        <li><Link to="/routes">Routes</Link></li> {/* Use Link with to="/services" */}
         <li><Link to="/contact">Contact</Link></li> {/* Use Link with to="/contact" */}
       </ul>
       <div className="hamburger" onClick={toggleMenu}>

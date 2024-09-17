@@ -51,7 +51,7 @@ const SliderComponent = () => {
         </p>
 
         <Swiper
-          modules={[Navigation, Pagination, EffectCoverflow]} // Specify the modules here
+          modules={[Navigation, Pagination, EffectCoverflow]}
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}

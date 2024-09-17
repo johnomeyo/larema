@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  grid-template-rows: auto;
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Style the first image to span multiple rows and columns */
+.grid-item.large {
+  grid-column: span 2; /* Make this item span 2 columns */
+  grid-row: span 2;    /* Make this item span 2 rows */
+}
+
+/* Media queries to make the grid responsive */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items in a single column for mobile */
+  }
+
+  .grid-item.large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

@@ -4,12 +4,12 @@ import './Testimonial.css';
 const testimonials = [
   {
     name: 'Jema Girson',
-    image: 'https://images.unsplash.com/photo-1612898887720-9a468670dc68?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDNV4kLJb0mio5A_cKv0mwI2CcoaZ8wImLg&s',
     text: 'Had an incredible adventure with Larema Adventure and Trekking! The guides were knowledgeable and friendly, and the scenery was breathtaking',
   },
   {
     name: 'Wayne Rooney',
-    image: 'https://images.unsplash.com/photo-1664575600850-c4b712e6e2bf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://norsecraft.co.uk/cdn/shop/files/5.jpg?v=1710172437&width=2000',
     text: 'I had the opportunity to experience Hiking which was an unforgettable highlight of the trip.',
   },
   {
