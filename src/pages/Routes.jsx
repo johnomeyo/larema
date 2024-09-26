@@ -105,8 +105,8 @@ const TravellingRoutes = () => {
                                 </div>
                             </td>
                             <td>
-                                <iframe src="https://www.google.com/maps/place/Prestige+Cinemas/@-1.3004547,36.7847607,17z/data=!3m1!4b1!4m6!3m5!1s0x182f109c77089bd7:0x41b7b12fb74250d8!8m2!3d-1.3004601!4d36.7873356!16s%2Fg%2F11g6x7yx2l?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D" frameborder="0"></iframe>
-                                {/* <img className="trip-image" src="https://www.shutterstock.com/image-vector/trail-map-tourists-hiking-footpath-260nw-1248093616.jpg" alt={trip.trip} /> */}
+                                {/* <iframe src="https://www.google.com/maps/place/Prestige+Cinemas/@-1.3004547,36.7847607,17z/data=!3m1!4b1!4m6!3m5!1s0x182f109c77089bd7:0x41b7b12fb74250d8!8m2!3d-1.3004601!4d36.7873356!16s%2Fg%2F11g6x7yx2l?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D" frameborder="0"></iframe> */}
+                                <img className="trip-image" src="https://www.shutterstock.com/image-vector/trail-map-tourists-hiking-footpath-260nw-1248093616.jpg" alt={trip.trip} />
                             </td>
                             <td>{trip.days}</td>
                             <td>

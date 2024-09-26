@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import PricingPlans from '../components/TourPackages';
 
 const About = () => {
     const projects = [
@@ -56,6 +57,7 @@ const About = () => {
                     </div>
                 ))}
             </div>
+            <PricingPlans/>
         </div>
     );
 };

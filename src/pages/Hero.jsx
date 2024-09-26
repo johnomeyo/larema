@@ -16,8 +16,8 @@ export const Hero = () => {
     // List of images for the slideshow
     const images = [
         "https://images.unsplash.com/photo-1650668302253-3fc13879ec85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1588445599591-efe468e9c3ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1664304370557-233bccc0ac85?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1666863911660-d64fc1022c12?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1664238753937-a2c7ddd1a4e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ];
 
     // State to track the current active image index
@@ -43,6 +43,7 @@ export const Hero = () => {
                 style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
             >
                 <div className="hero__content">
+                    <p>Welcome to </p>
                     <h3 className="hero__title">Experience The Ultimate Safari Adventure by Larema Trekking and Adventure</h3>
                     <h2 className="hero__subtitle">TANZANIA</h2>
                     <button className="hero__button" onClick={handleClick}>Explore</button>
